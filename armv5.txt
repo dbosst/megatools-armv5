@@ -3,20 +3,20 @@ c = 'arm-linux-gnueabi-gcc'
 cpp = 'arm-linux-gnueabi-g++'
 ar = 'arm-linux-gnueabi-ar'
 strip = 'arm-linux-gnueabi-strip'
-pkgconfig = 'pkg-config'
+pkg-config = 'pkg-config'
 
 [host_machine]
 system = 'linux'
 cpu_family = 'arm'
-cpu = 'armv5te'
+cpu = 'armv5'
 endian = 'little'
+exe_wrapper = '/bin/true'
 
 [properties]
-sys_root = '/sysroot'
+sys_root = '/opt/sysroot-jessie-armel'
+needs_exe_wrapper = false
 
-c_args = ['--sysroot=/sysroot', '-march=armv5te']
-
-c_link_args = ['--sysroot=/sysroot', '-march=armv5te']
-
-[paths]
-prefix = '/usr'
+[built-in options]
+c_args = ['--sysroot=/opt/sysroot-jessie-armel']
+c_link_args = ['--sysroot=/opt/sysroot-jessie-armel','-L/opt/sysroot-jessie-armel/usr/lib/arm-linux-gnueabi','-lpcre']
+# IMPORTANT: disable runtime execution probing

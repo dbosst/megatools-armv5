@@ -8,6 +8,7 @@ project('megatools', 'c',
 
 cc = meson.get_compiler('c')
 add_global_arguments('-Wno-unused', '-Wno-pointer-sign', language: 'c')
+add_project_arguments('-D_LIBCURL_LEGACY_', language : 'c')
 
 deps = [
   dependency('threads'),

@@ -23,6 +23,7 @@
 #include "alloc.h"
 
 #include <curl/curl.h>
+#include <stdint.h>
 #include <string.h>
 #include <openssl/evp.h>
 
@@ -148,7 +149,7 @@ struct http *http_new(void)
 
 	curl_easy_setopt(h->curl, CURLOPT_FOLLOWLOCATION, 1L);
 	curl_easy_setopt(h->curl, CURLOPT_NOSIGNAL, 1L);
-	curl_easy_setopt(h->curl, CURLOPT_PROTOCOLS_STR, "http,https");
+	curl_easy_setopt(h->curl, CURLOPT_PROTOCOLS, CURLPROTO_HTTP | CURLPROTO_HTTPS);
 
 	curl_easy_setopt(h->curl, CURLOPT_TCP_KEEPALIVE, 1L);
 	curl_easy_setopt(h->curl, CURLOPT_TCP_KEEPIDLE, 120L);
@@ -342,7 +343,7 @@ static uint32_t gencash(const char token[48], uint32_t easiness)
 	memset(buf, 0, 4);
 	uint32_t *prefix = (void*)buf;
 
-	EVP_MD_CTX *ctx = EVP_MD_CTX_new();
+	EVP_MD_CTX *ctx = EVP_MD_CTX_create();
 
 	while (1) {
 		*prefix += 1;
@@ -367,54 +368,16 @@ static uint32_t gencash(const char token[48], uint32_t easiness)
 	}
 
 out:
-	EVP_MD_CTX_free(ctx);
+	EVP_MD_CTX_destroy(ctx);
 	g_free(buf);
 	return ret;
 }
 
 static gboolean http_handle_402(struct http *h)
 {
-	glong http_status = 0;
+	char *hdr = NULL;
 
-	if (curl_easy_getinfo(h->curl, CURLINFO_RESPONSE_CODE, &http_status) != CURLE_OK)
-		return FALSE;
-	if (http_status != 402)
-		return FALSE;
-
-	struct curl_header *hdr = NULL;
-	CURLHcode hh = curl_easy_header(h->curl, "X-Hashcash", 0, CURLH_HEADER, -1, &hdr);
-	if (hh != CURLHE_OK)
-		return FALSE;
-
-	gc_strfreev gchar** parts = g_strsplit(hdr->value, ":", -1);
-	if (g_strv_length(parts) != 4)
-		return FALSE;
-
-	if (strcmp(parts[0], "1"))
-		return FALSE;
-
-	gchar* np = NULL;
-	gint64 v = g_ascii_strtoll(parts[1], &np, 10);
-	if (v == 0 && np == parts[1])
-		return FALSE;
-	if (v < 0 || v > 255)
-		return FALSE;
-
-	gsize token_size;
-	gc_free guchar* token = base64urldecode(parts[3], &token_size);
-	if (token_size != 48)
-		return FALSE;
-
-	uint32_t ret = gencash(token, v);
-	if (ret == 0xffffffffu)
-		return FALSE;
-
-	gc_free gchar* str = base64urlencode((gchar*)&ret, 4);
-
-	gc_free gchar* res = g_strdup_printf("1:%s:%s", parts[3], str);
-	http_set_header(h, "X-Hashcash", res);
-
-	return TRUE;
+	return FALSE;
 }
 
 GString *http_post(struct http *h, const gchar *url, const gchar *body, gssize body_len, GError **err)

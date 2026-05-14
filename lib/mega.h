@@ -22,6 +22,7 @@
 
 #include <glib.h>
 #include <gio/gio.h>
+#include "compat.h"
 
 // API error domain
 
