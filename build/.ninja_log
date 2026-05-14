@@ -1,0 +1,16 @@
+# ninja log v5
+3	712	1778777438	megatools@exe/tools_df.c.o	3c3113a845d5d4f
+4	833	1778777438	megatools@exe/tools_dl.c.o	9d099037f4317091
+2	1213	1778777438	megatools@exe/lib_tools.c.o	627daa5fa4e1863f
+715	1310	1778777438	megatools@exe/tools_get.c.o	3f2236a9a71d655d
+0	1415	1778777438	megatools@exe/lib_sjson.gen.c.o	9b72a2a93d8281cd
+1	1547	1778777438	megatools@exe/lib_mega.c.o	6f3765848cb158ae
+835	1684	1778777439	megatools@exe/tools_ls.c.o	5a73bd3c62062cc4
+1214	1774	1778777439	megatools@exe/tools_test.c.o	9ad72f48cf2a59f3
+1415	1795	1778777439	megatools@exe/tools_mkdir.c.o	fe3663ea900ce29c
+1314	1832	1778777439	megatools@exe/tools_export.c.o	ee182bbe654ea448
+1549	1910	1778777439	megatools@exe/tools_put.c.o	f64115e74900b969
+4	405	1778777929	megatools@exe/tools_rm.c.o	7e8d5b361c8e2e55
+6	499	1778777929	megatools@exe/tools_shell.c.o	fcc2ad3b6e28e97e
+4	637	1778777929	megatools@exe/tools_reg.c.o	58ff5e9c1b61a8d5
+5	760	1778777929	megatools@exe/tools_copy.c.o	e8374c65a68e7b74

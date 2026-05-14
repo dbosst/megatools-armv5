@@ -1,0 +1,190 @@
+Build started at 2026-05-14T16:50:15.138073
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.49.2
+Source dir: /home/megatools-1.11.5.20250706
+Build dir: /home/megatools-1.11.5.20250706/build
+Build type: cross build
+Project name: megatools
+Project version: 1.11.5
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc /home/megatools-1.11.5.20250706/build/meson-private/sanitycheckc.c -o /home/megatools-1.11.5.20250706/build/meson-private/sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/megatools-1.11.5.20250706/build/meson-private/sanitycheckc.exe
+Sanity testing C compiler: arm-linux-gnueabi-gcc
+Is cross compiler: True.
+Sanity check compiler command line: arm-linux-gnueabi-gcc --sysroot=/sysroot -march=armv5te -c /home/megatools-1.11.5.20250706/build/meson-private/sanitycheckc.c -o /home/megatools-1.11.5.20250706/build/meson-private/sanitycheckc_cross.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Native C compiler: cc (gcc 8.3.0 "cc (Debian 8.3.0-6) 8.3.0")
+Cross C compiler: arm-linux-gnueabi-gcc (gcc 8.3.0)
+Host machine cpu family: arm
+Host machine cpu: armv5te
+Target machine cpu family: arm
+Target machine cpu: armv5te
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Cross dependency threads found: YES 
+Determining dependency 'gio-2.0' with pkg-config executable '/usr/bin/pkg-config'
+Called `/usr/bin/pkg-config --modversion gio-2.0` -> 0
+2.58.3
+Called `/usr/bin/pkg-config --cflags gio-2.0` -> 0
+-pthread -I/sysroot/usr/include/libmount -I/sysroot/usr/include/blkid -I/sysroot/usr/include/uuid -I/sysroot/usr/include/glib-2.0 -I/sysroot/usr/lib/arm-linux-gnueabi/glib-2.0/include
+Called `/usr/bin/pkg-config gio-2.0 --libs` -> 0
+-L/sysroot/usr/lib/arm-linux-gnueabi -lgio-2.0 -lgobject-2.0 -lglib-2.0
+Called `/usr/bin/pkg-config gio-2.0 --libs` -> 0
+-L/sysroot/usr/lib/arm-linux-gnueabi -lgio-2.0 -lgobject-2.0 -lglib-2.0
+Running compile:
+Working directory:  /tmp/tmpl8pevl13
+Command line:  arm-linux-gnueabi-gcc /tmp/tmpl8pevl13/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpl8pevl13/output.obj --sysroot=/sysroot -march=armv5te -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(int argc, char **argv) {
+            void * something;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpj2c5uits
+Command line:  arm-linux-gnueabi-gcc /tmp/tmpj2c5uits/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpj2c5uits/output.obj --sysroot=/sysroot -march=armv5te -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main() { static int a[1-2*!(sizeof(void *) >= 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp6021ik9d
+Command line:  arm-linux-gnueabi-gcc /tmp/tmp6021ik9d/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp6021ik9d/output.obj --sysroot=/sysroot -march=armv5te -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main() { static int a[1-2*!(sizeof(void *) > 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp66qug3_1
+Command line:  arm-linux-gnueabi-gcc /tmp/tmp66qug3_1/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp66qug3_1/output.obj --sysroot=/sysroot -march=armv5te -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main() { static int a[1-2*!(sizeof(void *) > 1)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpkdyy6fho
+Command line:  arm-linux-gnueabi-gcc /tmp/tmpkdyy6fho/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpkdyy6fho/output.obj --sysroot=/sysroot -march=armv5te -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main() { static int a[1-2*!(sizeof(void *) > 3)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpsxedp95e
+Command line:  arm-linux-gnueabi-gcc /tmp/tmpsxedp95e/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpsxedp95e/output.obj --sysroot=/sysroot -march=armv5te -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main() { static int a[1-2*!(sizeof(void *) > 7)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ /tmp/tmpsxedp95e/testfile.c: In function 'main':
+/tmp/tmpsxedp95e/testfile.c:3:33: error: size of array 'a' is negative
+         int main() { static int a[1-2*!(sizeof(void *) > 7)]; a[0]=0; return 0; }
+                                 ^
+
+Running compile:
+Working directory:  /tmp/tmpit16q22e
+Command line:  arm-linux-gnueabi-gcc /tmp/tmpit16q22e/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpit16q22e/output.obj --sysroot=/sysroot -march=armv5te -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main() { static int a[1-2*!(sizeof(void *) <= 5)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp_j5dmqip
+Command line:  arm-linux-gnueabi-gcc /tmp/tmp_j5dmqip/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp_j5dmqip/output.obj --sysroot=/sysroot -march=armv5te -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main() { static int a[1-2*!(sizeof(void *) <= 4)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpxpf6aeiz
+Command line:  arm-linux-gnueabi-gcc /tmp/tmpxpf6aeiz/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpxpf6aeiz/output.obj --sysroot=/sysroot -march=armv5te -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc-cross/arm-linux-gnueabi/8/
+programs: =/usr/lib/gcc-cross/arm-linux-gnueabi/8/:/usr/lib/gcc-cross/arm-linux-gnueabi/8/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/8/:/usr/lib/gcc-cross/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/8/../../../../arm-linux-gnueabi/bin/arm-linux-gnueabi/8/:/usr/lib/gcc-cross/arm-linux-gnueabi/8/../../../../arm-linux-gnueabi/bin/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/8/../../../../arm-linux-gnueabi/bin/
+libraries: =/usr/lib/gcc-cross/arm-linux-gnueabi/8/:/usr/lib/gcc-cross/arm-linux-gnueabi/8/../../../../arm-linux-gnueabi/lib/arm-linux-gnueabi/8/:/usr/lib/gcc-cross/arm-linux-gnueabi/8/../../../../arm-linux-gnueabi/lib/arm-linux-gnueabi/:/usr/lib/gcc-cross/arm-linux-gnueabi/8/../../../../arm-linux-gnueabi/lib/:/sysroot/lib/arm-linux-gnueabi/8/:/sysroot/lib/arm-linux-gnueabi/:/sysroot/lib/:/sysroot/usr/lib/arm-linux-gnueabi/8/:/sysroot/usr/lib/arm-linux-gnueabi/:/sysroot/usr/lib/
+
+Compiler stderr:
+ 
+Cross dependency gio-2.0 found: YES 2.58.3
+Determining dependency 'libcurl' with pkg-config executable '/usr/bin/pkg-config'
+Called `/usr/bin/pkg-config --modversion libcurl` -> 0
+7.64.0
+Called `/usr/bin/pkg-config --cflags libcurl` -> 0
+-I/sysroot/usr/include/arm-linux-gnueabi
+Called `/usr/bin/pkg-config libcurl --libs` -> 0
+-L/sysroot/usr/lib/arm-linux-gnueabi -lcurl
+Called `/usr/bin/pkg-config libcurl --libs` -> 0
+-L/sysroot/usr/lib/arm-linux-gnueabi -lcurl
+Cross dependency libcurl found: YES 7.64.0
+Determining dependency 'openssl' with pkg-config executable '/usr/bin/pkg-config'
+Called `/usr/bin/pkg-config --modversion openssl` -> 0
+1.1.1n
+Called `/usr/bin/pkg-config --cflags openssl` -> 0
+
+Called `/usr/bin/pkg-config openssl --libs` -> 0
+-L/sysroot/usr/lib/arm-linux-gnueabi -lssl -lcrypto
+Called `/usr/bin/pkg-config openssl --libs` -> 0
+-L/sysroot/usr/lib/arm-linux-gnueabi -lssl -lcrypto
+Cross dependency openssl found: YES 1.1.1n
+Configuring config.h using configuration
+Program install-symlinks.sh found: YES (/bin/sh /home/megatools-1.11.5.20250706/install-symlinks.sh)
+Program asciidoc found: NO
+Program db2x_xsltproc found: NO
+Program db2x_manxml found: NO
+Build targets in project: 1
+Found ninja-1.8.2 at /usr/bin/ninja

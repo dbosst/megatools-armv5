@@ -1,0 +1,6 @@
+[options]
+default_library = static
+
+[properties]
+cross_file = armv5.txt
+

@@ -1,0 +1,82 @@
+[
+  {
+    "directory": "/home/megatools-1.11.5.20250706/build",
+    "command": "arm-linux-gnueabi-gcc -Imegatools@exe -I. -I.. -I../lib -I../tools -I../ -I/sysroot/usr/include/libmount -I/sysroot/usr/include/blkid -I/sysroot/usr/include/uuid -I/sysroot/usr/include/glib-2.0 -I/sysroot/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/sysroot/usr/include/arm-linux-gnueabi -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -g -Wno-unused -Wno-pointer-sign -pthread --sysroot=/sysroot -march=armv5te -MD -MQ 'megatools@exe/lib_sjson.gen.c.o' -MF 'megatools@exe/lib_sjson.gen.c.o.d' -o 'megatools@exe/lib_sjson.gen.c.o' -c ../lib/sjson.gen.c",
+    "file": "../lib/sjson.gen.c"
+  },
+  {
+    "directory": "/home/megatools-1.11.5.20250706/build",
+    "command": "arm-linux-gnueabi-gcc -Imegatools@exe -I. -I.. -I../lib -I../tools -I../ -I/sysroot/usr/include/libmount -I/sysroot/usr/include/blkid -I/sysroot/usr/include/uuid -I/sysroot/usr/include/glib-2.0 -I/sysroot/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/sysroot/usr/include/arm-linux-gnueabi -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -g -Wno-unused -Wno-pointer-sign -pthread --sysroot=/sysroot -march=armv5te -MD -MQ 'megatools@exe/lib_http.c.o' -MF 'megatools@exe/lib_http.c.o.d' -o 'megatools@exe/lib_http.c.o' -c ../lib/http.c",
+    "file": "../lib/http.c"
+  },
+  {
+    "directory": "/home/megatools-1.11.5.20250706/build",
+    "command": "arm-linux-gnueabi-gcc -Imegatools@exe -I. -I.. -I../lib -I../tools -I../ -I/sysroot/usr/include/libmount -I/sysroot/usr/include/blkid -I/sysroot/usr/include/uuid -I/sysroot/usr/include/glib-2.0 -I/sysroot/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/sysroot/usr/include/arm-linux-gnueabi -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -g -Wno-unused -Wno-pointer-sign -pthread --sysroot=/sysroot -march=armv5te -MD -MQ 'megatools@exe/lib_mega.c.o' -MF 'megatools@exe/lib_mega.c.o.d' -o 'megatools@exe/lib_mega.c.o' -c ../lib/mega.c",
+    "file": "../lib/mega.c"
+  },
+  {
+    "directory": "/home/megatools-1.11.5.20250706/build",
+    "command": "arm-linux-gnueabi-gcc -Imegatools@exe -I. -I.. -I../lib -I../tools -I../ -I/sysroot/usr/include/libmount -I/sysroot/usr/include/blkid -I/sysroot/usr/include/uuid -I/sysroot/usr/include/glib-2.0 -I/sysroot/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/sysroot/usr/include/arm-linux-gnueabi -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -g -Wno-unused -Wno-pointer-sign -pthread --sysroot=/sysroot -march=armv5te -MD -MQ 'megatools@exe/lib_tools.c.o' -MF 'megatools@exe/lib_tools.c.o.d' -o 'megatools@exe/lib_tools.c.o' -c ../lib/tools.c",
+    "file": "../lib/tools.c"
+  },
+  {
+    "directory": "/home/megatools-1.11.5.20250706/build",
+    "command": "arm-linux-gnueabi-gcc -Imegatools@exe -I. -I.. -I../lib -I../tools -I../ -I/sysroot/usr/include/libmount -I/sysroot/usr/include/blkid -I/sysroot/usr/include/uuid -I/sysroot/usr/include/glib-2.0 -I/sysroot/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/sysroot/usr/include/arm-linux-gnueabi -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -g -Wno-unused -Wno-pointer-sign -pthread --sysroot=/sysroot -march=armv5te -MD -MQ 'megatools@exe/tools_df.c.o' -MF 'megatools@exe/tools_df.c.o.d' -o 'megatools@exe/tools_df.c.o' -c ../tools/df.c",
+    "file": "../tools/df.c"
+  },
+  {
+    "directory": "/home/megatools-1.11.5.20250706/build",
+    "command": "arm-linux-gnueabi-gcc -Imegatools@exe -I. -I.. -I../lib -I../tools -I../ -I/sysroot/usr/include/libmount -I/sysroot/usr/include/blkid -I/sysroot/usr/include/uuid -I/sysroot/usr/include/glib-2.0 -I/sysroot/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/sysroot/usr/include/arm-linux-gnueabi -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -g -Wno-unused -Wno-pointer-sign -pthread --sysroot=/sysroot -march=armv5te -MD -MQ 'megatools@exe/tools_dl.c.o' -MF 'megatools@exe/tools_dl.c.o.d' -o 'megatools@exe/tools_dl.c.o' -c ../tools/dl.c",
+    "file": "../tools/dl.c"
+  },
+  {
+    "directory": "/home/megatools-1.11.5.20250706/build",
+    "command": "arm-linux-gnueabi-gcc -Imegatools@exe -I. -I.. -I../lib -I../tools -I../ -I/sysroot/usr/include/libmount -I/sysroot/usr/include/blkid -I/sysroot/usr/include/uuid -I/sysroot/usr/include/glib-2.0 -I/sysroot/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/sysroot/usr/include/arm-linux-gnueabi -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -g -Wno-unused -Wno-pointer-sign -pthread --sysroot=/sysroot -march=armv5te -MD -MQ 'megatools@exe/tools_get.c.o' -MF 'megatools@exe/tools_get.c.o.d' -o 'megatools@exe/tools_get.c.o' -c ../tools/get.c",
+    "file": "../tools/get.c"
+  },
+  {
+    "directory": "/home/megatools-1.11.5.20250706/build",
+    "command": "arm-linux-gnueabi-gcc -Imegatools@exe -I. -I.. -I../lib -I../tools -I../ -I/sysroot/usr/include/libmount -I/sysroot/usr/include/blkid -I/sysroot/usr/include/uuid -I/sysroot/usr/include/glib-2.0 -I/sysroot/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/sysroot/usr/include/arm-linux-gnueabi -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -g -Wno-unused -Wno-pointer-sign -pthread --sysroot=/sysroot -march=armv5te -MD -MQ 'megatools@exe/tools_ls.c.o' -MF 'megatools@exe/tools_ls.c.o.d' -o 'megatools@exe/tools_ls.c.o' -c ../tools/ls.c",
+    "file": "../tools/ls.c"
+  },
+  {
+    "directory": "/home/megatools-1.11.5.20250706/build",
+    "command": "arm-linux-gnueabi-gcc -Imegatools@exe -I. -I.. -I../lib -I../tools -I../ -I/sysroot/usr/include/libmount -I/sysroot/usr/include/blkid -I/sysroot/usr/include/uuid -I/sysroot/usr/include/glib-2.0 -I/sysroot/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/sysroot/usr/include/arm-linux-gnueabi -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -g -Wno-unused -Wno-pointer-sign -pthread --sysroot=/sysroot -march=armv5te -MD -MQ 'megatools@exe/tools_test.c.o' -MF 'megatools@exe/tools_test.c.o.d' -o 'megatools@exe/tools_test.c.o' -c ../tools/test.c",
+    "file": "../tools/test.c"
+  },
+  {
+    "directory": "/home/megatools-1.11.5.20250706/build",
+    "command": "arm-linux-gnueabi-gcc -Imegatools@exe -I. -I.. -I../lib -I../tools -I../ -I/sysroot/usr/include/libmount -I/sysroot/usr/include/blkid -I/sysroot/usr/include/uuid -I/sysroot/usr/include/glib-2.0 -I/sysroot/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/sysroot/usr/include/arm-linux-gnueabi -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -g -Wno-unused -Wno-pointer-sign -pthread --sysroot=/sysroot -march=armv5te -MD -MQ 'megatools@exe/tools_export.c.o' -MF 'megatools@exe/tools_export.c.o.d' -o 'megatools@exe/tools_export.c.o' -c ../tools/export.c",
+    "file": "../tools/export.c"
+  },
+  {
+    "directory": "/home/megatools-1.11.5.20250706/build",
+    "command": "arm-linux-gnueabi-gcc -Imegatools@exe -I. -I.. -I../lib -I../tools -I../ -I/sysroot/usr/include/libmount -I/sysroot/usr/include/blkid -I/sysroot/usr/include/uuid -I/sysroot/usr/include/glib-2.0 -I/sysroot/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/sysroot/usr/include/arm-linux-gnueabi -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -g -Wno-unused -Wno-pointer-sign -pthread --sysroot=/sysroot -march=armv5te -MD -MQ 'megatools@exe/tools_mkdir.c.o' -MF 'megatools@exe/tools_mkdir.c.o.d' -o 'megatools@exe/tools_mkdir.c.o' -c ../tools/mkdir.c",
+    "file": "../tools/mkdir.c"
+  },
+  {
+    "directory": "/home/megatools-1.11.5.20250706/build",
+    "command": "arm-linux-gnueabi-gcc -Imegatools@exe -I. -I.. -I../lib -I../tools -I../ -I/sysroot/usr/include/libmount -I/sysroot/usr/include/blkid -I/sysroot/usr/include/uuid -I/sysroot/usr/include/glib-2.0 -I/sysroot/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/sysroot/usr/include/arm-linux-gnueabi -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -g -Wno-unused -Wno-pointer-sign -pthread --sysroot=/sysroot -march=armv5te -MD -MQ 'megatools@exe/tools_put.c.o' -MF 'megatools@exe/tools_put.c.o.d' -o 'megatools@exe/tools_put.c.o' -c ../tools/put.c",
+    "file": "../tools/put.c"
+  },
+  {
+    "directory": "/home/megatools-1.11.5.20250706/build",
+    "command": "arm-linux-gnueabi-gcc -Imegatools@exe -I. -I.. -I../lib -I../tools -I../ -I/sysroot/usr/include/libmount -I/sysroot/usr/include/blkid -I/sysroot/usr/include/uuid -I/sysroot/usr/include/glib-2.0 -I/sysroot/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/sysroot/usr/include/arm-linux-gnueabi -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -g -Wno-unused -Wno-pointer-sign -pthread --sysroot=/sysroot -march=armv5te -MD -MQ 'megatools@exe/tools_reg.c.o' -MF 'megatools@exe/tools_reg.c.o.d' -o 'megatools@exe/tools_reg.c.o' -c ../tools/reg.c",
+    "file": "../tools/reg.c"
+  },
+  {
+    "directory": "/home/megatools-1.11.5.20250706/build",
+    "command": "arm-linux-gnueabi-gcc -Imegatools@exe -I. -I.. -I../lib -I../tools -I../ -I/sysroot/usr/include/libmount -I/sysroot/usr/include/blkid -I/sysroot/usr/include/uuid -I/sysroot/usr/include/glib-2.0 -I/sysroot/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/sysroot/usr/include/arm-linux-gnueabi -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -g -Wno-unused -Wno-pointer-sign -pthread --sysroot=/sysroot -march=armv5te -MD -MQ 'megatools@exe/tools_rm.c.o' -MF 'megatools@exe/tools_rm.c.o.d' -o 'megatools@exe/tools_rm.c.o' -c ../tools/rm.c",
+    "file": "../tools/rm.c"
+  },
+  {
+    "directory": "/home/megatools-1.11.5.20250706/build",
+    "command": "arm-linux-gnueabi-gcc -Imegatools@exe -I. -I.. -I../lib -I../tools -I../ -I/sysroot/usr/include/libmount -I/sysroot/usr/include/blkid -I/sysroot/usr/include/uuid -I/sysroot/usr/include/glib-2.0 -I/sysroot/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/sysroot/usr/include/arm-linux-gnueabi -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -g -Wno-unused -Wno-pointer-sign -pthread --sysroot=/sysroot -march=armv5te -MD -MQ 'megatools@exe/tools_copy.c.o' -MF 'megatools@exe/tools_copy.c.o.d' -o 'megatools@exe/tools_copy.c.o' -c ../tools/copy.c",
+    "file": "../tools/copy.c"
+  },
+  {
+    "directory": "/home/megatools-1.11.5.20250706/build",
+    "command": "arm-linux-gnueabi-gcc -Imegatools@exe -I. -I.. -I../lib -I../tools -I../ -I/sysroot/usr/include/libmount -I/sysroot/usr/include/blkid -I/sysroot/usr/include/uuid -I/sysroot/usr/include/glib-2.0 -I/sysroot/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/sysroot/usr/include/arm-linux-gnueabi -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -g -Wno-unused -Wno-pointer-sign -pthread --sysroot=/sysroot -march=armv5te -MD -MQ 'megatools@exe/tools_shell.c.o' -MF 'megatools@exe/tools_shell.c.o.d' -o 'megatools@exe/tools_shell.c.o' -c ../tools/shell.c",
+    "file": "../tools/shell.c"
+  }
+]
