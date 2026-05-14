@@ -1,4 +1,5 @@
-- Uses Debian Jessie armel sysroot from NAS
+- Uses Debian Jessie armel sysroot (from debian jessie archive)
+- Tested with Synology NAS 212J (chrooted to debian)
 - Requires:
   PKG_CONFIG_SYSROOT_DIR
   PKG_CONFIG_LIBDIR
